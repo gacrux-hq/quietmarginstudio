@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt-PT" data-lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gerador de CV grátis em PDF | Quiet Margin Studio</title>
+<meta name="description" content="Crie o seu CV grátis online em português, com pré-visualização em tempo real, 2 modelos e download em PDF. Sem registo e sem enviar dados.">
+<link rel="canonical" href="https://guilhermegarcia-pascoa.github.io/quietmarginstudio/gerador-cv.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Quiet Margin Studio">
+<meta property="og:locale" content="pt_PT">
+<meta property="og:title" content="Gerador de CV grátis em PDF | Quiet Margin Studio">
+<meta property="og:description" content="Crie o seu CV grátis online em português, com pré-visualização em tempo real, 2 modelos e download em PDF. Sem registo e sem enviar dados.">
+<meta property="og:url" content="https://guilhermegarcia-pascoa.github.io/quietmarginstudio/gerador-cv.html">
+<meta property="og:image" content="https://guilhermegarcia-pascoa.github.io/quietmarginstudio/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#4f46e5">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/config.js" defer></script>
+<script src="assets/common.js" defer></script><script src="assets/cv.js" defer></script>
+</head>
+<body class="cv-page">
+<header class="site"><div class="wrap">
+<a class="logo" href="index.html"><img src="assets/favicon.svg" alt="" width="26" height="26" style="vertical-align:-7px;border-radius:6px"> <b data-brand>Quiet Margin Studio</b></a>
+<nav class="main" aria-label="Principal"><a href="index.html"><span lang="pt">Início</span><span lang="en">Home</span></a><a href="gerador-cv.html"><span lang="pt">Gerador de CV</span><span lang="en">CV builder</span></a><a href="checklist-candidatura.html"><span lang="pt">Checklist de candidatura</span><span lang="en">Application checklist</span></a><a href="calculadora-orcamento.html"><span lang="pt">Orçamento 50/30/20</span><span lang="en">50/30/20 budget</span></a><a href="index.html#premium"><span lang="pt">Modelos premium</span><span lang="en">Premium templates</span></a></nav>
+<button class="lang-btn" id="langBtn" type="button" aria-label="Mudar idioma / Change language">EN</button>
+</div></header>
+<main><div class="wrap">
+
+<section class="no-print"><h1><span lang="pt">Gerador de CV grátis</span><span lang="en">Free CV builder</span></h1>
+<p class="muted"><span lang="pt">Preencha à esquerda e veja o resultado ao lado. Os dados são guardados apenas neste navegador (localStorage).</span><span lang="en">Fill in on the left and see the result alongside. Data is saved only in this browser (localStorage).</span></p></section>
+<div class="cv-layout">
+<form class="cv-form-col" id="cvForm" autocomplete="on" onsubmit="return false">
+<fieldset><legend><span lang="pt">Dados pessoais</span><span lang="en">Personal details</span></legend>
+<div class="row"><div><label for="name"><span lang="pt">Nome completo</span><span lang="en">Full name</span></label><input id="name" type="text" data-ph-pt="Ana Silva" data-ph-en="Jane Doe" autocomplete="name"></div><div><label for="title"><span lang="pt">Título profissional</span><span lang="en">Job title</span></label><input id="title" type="text" data-ph-pt="Desenvolvedora Backend" data-ph-en="Backend Developer" ></div></div>
+<div class="row"><div><label for="email"><span lang="pt">Email</span><span lang="en">Email</span></label><input id="email" type="email" data-ph-pt="ana@email.pt" data-ph-en="jane@email.com" autocomplete="email"></div><div><label for="phone"><span lang="pt">Telefone</span><span lang="en">Phone</span></label><input id="phone" type="tel" data-ph-pt="+351 912 345 678" data-ph-en="+351 912 345 678" autocomplete="tel"></div></div>
+<div class="row"><div><label for="location"><span lang="pt">Localidade</span><span lang="en">Location</span></label><input id="location" type="text" data-ph-pt="Aveiro, Portugal" data-ph-en="Aveiro, Portugal" ></div><div><label for="link"><span lang="pt">LinkedIn / site</span><span lang="en">LinkedIn / website</span></label><input id="link" type="text" data-ph-pt="linkedin.com/in/ana" data-ph-en="linkedin.com/in/jane" ></div></div>
+</fieldset>
+<fieldset><legend><span lang="pt">Resumo</span><span lang="en">Summary</span></legend><div><label for="summary"><span lang="pt">Resumo profissional</span><span lang="en">Professional summary</span></label><textarea id="summary" data-ph-pt="2–3 frases sobre si, o que faz e o que procura." data-ph-en="2–3 sentences about you, what you do and what you are looking for."></textarea></div></fieldset>
+<fieldset><legend><span lang="pt">Experiência</span><span lang="en">Experience</span></legend><div id="expList"></div><button type="button" class="btn sm sec" id="addExp">+ <span lang="pt">Adicionar experiência</span><span lang="en">Add experience</span></button></fieldset>
+<fieldset><legend><span lang="pt">Formação</span><span lang="en">Education</span></legend><div id="eduList"></div><button type="button" class="btn sm sec" id="addEdu">+ <span lang="pt">Adicionar formação</span><span lang="en">Add education</span></button></fieldset>
+<fieldset><legend><span lang="pt">Competências e línguas</span><span lang="en">Skills and languages</span></legend>
+<div><label for="skills"><span lang="pt">Competências (separadas por vírgulas)</span><span lang="en">Skills (comma-separated)</span></label><input id="skills" type="text" data-ph-pt="Python, SQL, Git, Trabalho em equipa" data-ph-en="Python, SQL, Git, Teamwork" ></div>
+<div><label for="languages"><span lang="pt">Línguas (separadas por vírgulas)</span><span lang="en">Languages (comma-separated)</span></label><input id="languages" type="text" data-ph-pt="Português (nativo), Inglês (C1)" data-ph-en="Portuguese (native), English (C1)" ></div>
+</fieldset>
+</form>
+<div class="cv-preview-col">
+<div class="toolbar no-print">
+<label for="tpl" style="margin:0"><span lang="pt">Modelo:</span><span lang="en">Template:</span></label>
+<select id="tpl" style="width:auto"><option value="classico">Clássico</option><option value="moderno">Moderno</option></select>
+<button type="button" class="btn" id="printBtn">⬇ <span lang="pt">Descarregar PDF</span><span lang="en">Download PDF</span></button>
+<button type="button" class="btn ghost sm" id="sampleBtn"><span lang="pt">Exemplo</span><span lang="en">Sample</span></button>
+<button type="button" class="btn danger sm" id="clearBtn"><span lang="pt">Limpar</span><span lang="en">Clear</span></button>
+</div>
+<p class="small muted no-print"><span lang="pt">Dica: na janela de impressão escolha “Guardar como PDF” e desative “Cabeçalhos e rodapés”.</span><span lang="en">Tip: in the print dialog choose “Save as PDF” and turn off “Headers and footers”.</span></p>
+<div id="cvPreview" class="cv-paper tpl-classico" aria-live="polite"></div>
+</div>
+</div>
+
+</div></main>
+<footer class="site"><div class="wrap">
+<div>© <span data-year></span> <span data-brand>Quiet Margin Studio</span>. <span lang="pt">Ferramentas gratuitas, sem registo.</span><span lang="en">Free tools, no sign-up.</span></div>
+<div><a href="privacidade.html"><span lang="pt">Privacidade</span><span lang="en">Privacy</span></a> · <span lang="pt">Os seus dados ficam no seu navegador.</span><span lang="en">Your data stays in your browser.</span></div>
+</div></footer>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-PT" data-lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Checklist de candidatura a emprego e estágio | Quiet Margin Studio</title>
+<meta name="description" content="Checklist grátis para candidaturas a emprego e estágio em Portugal, com tracker simples de candidaturas guardado no seu navegador. Sem registo.">
+<link rel="canonical" href="https://guilhermegarcia-pascoa.github.io/quietmarginstudio/checklist-candidatura.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Quiet Margin Studio">
+<meta property="og:locale" content="pt_PT">
+<meta property="og:title" content="Checklist de candidatura a emprego e estágio | Quiet Margin Studio">
+<meta property="og:description" content="Checklist grátis para candidaturas a emprego e estágio em Portugal, com tracker simples de candidaturas guardado no seu navegador. Sem registo.">
+<meta property="og:url" content="https://guilhermegarcia-pascoa.github.io/quietmarginstudio/checklist-candidatura.html">
+<meta property="og:image" content="https://guilhermegarcia-pascoa.github.io/quietmarginstudio/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#4f46e5">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/config.js" defer></script>
+<script src="assets/common.js" defer></script><script src="assets/checklist.js" defer></script>
+</head>
+<body class="">
+<header class="site"><div class="wrap">
+<a class="logo" href="index.html"><img src="assets/favicon.svg" alt="" width="26" height="26" style="vertical-align:-7px;border-radius:6px"> <b data-brand>Quiet Margin Studio</b></a>
+<nav class="main" aria-label="Principal"><a href="index.html"><span lang="pt">Início</span><span lang="en">Home</span></a><a href="gerador-cv.html"><span lang="pt">Gerador de CV</span><span lang="en">CV builder</span></a><a href="checklist-candidatura.html"><span lang="pt">Checklist de candidatura</span><span lang="en">Application checklist</span></a><a href="calculadora-orcamento.html"><span lang="pt">Orçamento 50/30/20</span><span lang="en">50/30/20 budget</span></a><a href="index.html#premium"><span lang="pt">Modelos premium</span><span lang="en">Premium templates</span></a></nav>
+<button class="lang-btn" id="langBtn" type="button" aria-label="Mudar idioma / Change language">EN</button>
+</div></header>
+<main><div class="wrap">
+
+<section><h1><span lang="pt">Checklist de candidatura a emprego e estágio</span><span lang="en">Job & internship application checklist</span></h1>
+<p class="muted"><span lang="pt">Marque os passos à medida que avança e registe as suas candidaturas. Tudo fica guardado neste navegador.</span><span lang="en">Tick the steps as you go and log your applications. Everything is saved in this browser.</span></p></section>
+<div class="grid g2">
+<div class="card"><h2><span lang="pt">Checklist</span><span lang="en">Checklist</span></h2>
+<div class="progress" aria-hidden="true"><div id="ckBar"></div></div><p class="small muted" id="ckText"></p>
+<div id="checklist"></div>
+<div class="toolbar"><button type="button" class="btn ghost sm" id="ckReset"><span lang="pt">Recomeçar checklist</span><span lang="en">Reset checklist</span></button></div>
+</div>
+<div class="card"><h2><span lang="pt">Tracker de candidaturas</span><span lang="en">Application tracker</span></h2>
+<form id="appForm">
+<div class="row"><div><label for="aCompany"><span lang="pt">Empresa</span><span lang="en">Company</span></label><input id="aCompany" required data-ph-pt="Ex.: Empresa X" data-ph-en="e.g. Company X"></div>
+<div><label for="aRole"><span lang="pt">Função</span><span lang="en">Role</span></label><input id="aRole" required data-ph-pt="Estágio em Backend" data-ph-en="Backend internship"></div></div>
+<div class="row"><div><label for="aDate"><span lang="pt">Data</span><span lang="en">Date</span></label><input id="aDate" type="date"></div>
+<div><label for="aStatus"><span lang="pt">Estado</span><span lang="en">Status</span></label><select id="aStatus"></select></div></div>
+<label for="aLink"><span lang="pt">Link do anúncio</span><span lang="en">Job post link</span></label><input id="aLink" type="url" data-ph-pt="https://…" data-ph-en="https://…">
+<label for="aNotes"><span lang="pt">Notas</span><span lang="en">Notes</span></label><input id="aNotes" data-ph-pt="Contacto, prazo, próximo passo…" data-ph-en="Contact, deadline, next step…">
+<div class="toolbar"><button class="btn" type="submit">+ <span lang="pt">Adicionar</span><span lang="en">Add</span></button></div>
+</form>
+</div>
+</div>
+<section class="card"><div class="toolbar" style="justify-content:space-between"><h2 style="margin:0"><span lang="pt">As minhas candidaturas</span><span lang="en">My applications</span></h2>
+<div class="toolbar"><button type="button" class="btn sec sm" id="csvBtn"><span lang="pt">Exportar CSV</span><span lang="en">Export CSV</span></button></div></div>
+<div class="stats" id="stats"></div>
+<div class="table-wrap"><table><thead><tr><th><span lang="pt">Empresa</span><span lang="en">Company</span></th><th><span lang="pt">Função</span><span lang="en">Role</span></th><th><span lang="pt">Data</span><span lang="en">Date</span></th><th><span lang="pt">Estado</span><span lang="en">Status</span></th><th><span lang="pt">Notas</span><span lang="en">Notes</span></th><th></th></tr></thead><tbody id="appRows"></tbody></table></div>
+<p class="small muted" id="emptyMsg"></p>
+<p class="small"><span lang="pt">Precisa de mais? O <a href="index.html#premium">tracker premium</a> inclui entrevistas, follow-ups e estatísticas.</span><span lang="en">Need more? The <a href="index.html#premium">premium tracker</a> adds interviews, follow-ups and stats.</span></p>
+</section>
+
+</div></main>
+<footer class="site"><div class="wrap">
+<div>© <span data-year></span> <span data-brand>Quiet Margin Studio</span>. <span lang="pt">Ferramentas gratuitas, sem registo.</span><span lang="en">Free tools, no sign-up.</span></div>
+<div><a href="privacidade.html"><span lang="pt">Privacidade</span><span lang="en">Privacy</span></a> · <span lang="pt">Os seus dados ficam no seu navegador.</span><span lang="en">Your data stays in your browser.</span></div>
+</div></footer>
+</body>
+</html>

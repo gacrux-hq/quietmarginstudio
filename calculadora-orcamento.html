@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-PT" data-lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Calculadora de orçamento mensal 50/30/20 em euros | Quiet Margin Studio</title>
+<meta name="description" content="Calcule grátis o seu orçamento mensal com a regra 50/30/20: necessidades, desejos e poupança em euros. Simples, rápido e sem registo.">
+<link rel="canonical" href="https://guilhermegarcia-pascoa.github.io/quietmarginstudio/calculadora-orcamento.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Quiet Margin Studio">
+<meta property="og:locale" content="pt_PT">
+<meta property="og:title" content="Calculadora de orçamento mensal 50/30/20 em euros | Quiet Margin Studio">
+<meta property="og:description" content="Calcule grátis o seu orçamento mensal com a regra 50/30/20: necessidades, desejos e poupança em euros. Simples, rápido e sem registo.">
+<meta property="og:url" content="https://guilhermegarcia-pascoa.github.io/quietmarginstudio/calculadora-orcamento.html">
+<meta property="og:image" content="https://guilhermegarcia-pascoa.github.io/quietmarginstudio/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#4f46e5">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/config.js" defer></script>
+<script src="assets/common.js" defer></script><script src="assets/orcamento.js" defer></script>
+</head>
+<body class="">
+<header class="site"><div class="wrap">
+<a class="logo" href="index.html"><img src="assets/favicon.svg" alt="" width="26" height="26" style="vertical-align:-7px;border-radius:6px"> <b data-brand>Quiet Margin Studio</b></a>
+<nav class="main" aria-label="Principal"><a href="index.html"><span lang="pt">Início</span><span lang="en">Home</span></a><a href="gerador-cv.html"><span lang="pt">Gerador de CV</span><span lang="en">CV builder</span></a><a href="checklist-candidatura.html"><span lang="pt">Checklist de candidatura</span><span lang="en">Application checklist</span></a><a href="calculadora-orcamento.html"><span lang="pt">Orçamento 50/30/20</span><span lang="en">50/30/20 budget</span></a><a href="index.html#premium"><span lang="pt">Modelos premium</span><span lang="en">Premium templates</span></a></nav>
+<button class="lang-btn" id="langBtn" type="button" aria-label="Mudar idioma / Change language">EN</button>
+</div></header>
+<main><div class="wrap">
+
+<section><h1><span lang="pt">Calculadora de orçamento mensal 50/30/20</span><span lang="en">50/30/20 monthly budget calculator</span></h1>
+<p class="muted"><span lang="pt">A regra 50/30/20 sugere dividir o rendimento líquido em 50% para necessidades, 30% para desejos e 20% para poupança ou dívidas.</span><span lang="en">The 50/30/20 rule suggests splitting net income into 50% needs, 30% wants and 20% savings or debt repayment.</span></p></section>
+<div class="grid g2">
+<form class="card" id="budgetForm" onsubmit="return false">
+<label for="income"><span lang="pt">Rendimento líquido mensal (€)</span><span lang="en">Monthly net income (€)</span></label>
+<input id="income" type="number" min="0" step="10" inputmode="decimal" data-ph-pt="Ex.: 1000" data-ph-en="e.g. 1000">
+<p class="small muted"><span lang="pt">Opcional: quanto gasta hoje em cada grupo, para comparar.</span><span lang="en">Optional: what you spend today in each group, to compare.</span></p>
+<div class="row"><div><label for="sNeeds"><span lang="pt">Necessidades (€)</span><span lang="en">Needs (€)</span></label><input id="sNeeds" type="number" min="0" step="10" inputmode="decimal" data-ph-pt="Renda, contas, transporte…" data-ph-en="Rent, bills, transport…"></div>
+<div><label for="sWants"><span lang="pt">Desejos (€)</span><span lang="en">Wants (€)</span></label><input id="sWants" type="number" min="0" step="10" inputmode="decimal" data-ph-pt="Lazer, jantares…" data-ph-en="Leisure, eating out…"></div></div>
+<label for="sSave"><span lang="pt">Poupança / dívidas (€)</span><span lang="en">Savings / debt (€)</span></label><input id="sSave" type="number" min="0" step="10" inputmode="decimal" data-ph-pt="Poupança, amortizações…" data-ph-en="Savings, repayments…">
+<div class="toolbar"><button type="button" class="btn ghost sm" id="bReset"><span lang="pt">Limpar</span><span lang="en">Clear</span></button></div>
+</form>
+<div class="card"><h2><span lang="pt">Resultado</span><span lang="en">Result</span></h2>
+<div class="bar" aria-hidden="true"><div style="width:50%;background:var(--brand)"></div><div style="width:30%;background:var(--brand2)"></div><div style="width:20%;background:var(--ok)"></div></div>
+<div class="grid" id="buckets"></div>
+</div>
+</div>
+<p class="note">⚠️ <span lang="pt">Resultado <b>meramente indicativo</b>. Esta calculadora não constitui aconselhamento financeiro, fiscal ou jurídico. Ajuste as percentagens à sua realidade.</span><span lang="en">Result is <b>for guidance only</b>. This calculator is not financial, tax or legal advice. Adjust the percentages to your situation.</span></p>
+<section class="card"><h2><span lang="pt">O que entra em cada grupo?</span><span lang="en">What goes in each group?</span></h2>
+<ul><li><span lang="pt"><b>Necessidades (50%)</b>: renda ou prestação da casa, água, luz, gás, internet, supermercado, transportes, seguros, saúde.</span><span lang="en"><b>Needs (50%)</b>: rent or mortgage, utilities, internet, groceries, transport, insurance, health.</span></li>
+<li><span lang="pt"><b>Desejos (30%)</b>: restaurantes, saídas, subscrições, roupa não essencial, viagens, hobbies.</span><span lang="en"><b>Wants (30%)</b>: restaurants, going out, subscriptions, non-essential clothes, travel, hobbies.</span></li>
+<li><span lang="pt"><b>Poupança e dívidas (20%)</b>: fundo de emergência, poupança para objetivos, amortização de créditos.</span><span lang="en"><b>Savings and debt (20%)</b>: emergency fund, savings goals, extra loan repayments.</span></li></ul>
+<p class="small"><span lang="pt">Quer controlar mês a mês? A <a href="index.html#premium">folha de orçamento premium</a> faz isto automaticamente.</span><span lang="en">Want to track month by month? The <a href="index.html#premium">premium budget spreadsheet</a> does it automatically.</span></p>
+</section>
+
+</div></main>
+<footer class="site"><div class="wrap">
+<div>© <span data-year></span> <span data-brand>Quiet Margin Studio</span>. <span lang="pt">Ferramentas gratuitas, sem registo.</span><span lang="en">Free tools, no sign-up.</span></div>
+<div><a href="privacidade.html"><span lang="pt">Privacidade</span><span lang="en">Privacy</span></a> · <span lang="pt">Os seus dados ficam no seu navegador.</span><span lang="en">Your data stays in your browser.</span></div>
+</div></footer>
+</body>
+</html>

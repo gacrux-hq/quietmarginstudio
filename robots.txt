@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://guilhermegarcia-pascoa.github.io/quietmarginstudio/sitemap.xml

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-PT" data-lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacidade | Quiet Margin Studio</title>
+<meta name="description" content="Nota de privacidade: este site não recolhe dados pessoais. Os dados das ferramentas ficam apenas no seu navegador.">
+<link rel="canonical" href="https://guilhermegarcia-pascoa.github.io/quietmarginstudio/privacidade.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Quiet Margin Studio">
+<meta property="og:locale" content="pt_PT">
+<meta property="og:title" content="Privacidade | Quiet Margin Studio">
+<meta property="og:description" content="Nota de privacidade: este site não recolhe dados pessoais. Os dados das ferramentas ficam apenas no seu navegador.">
+<meta property="og:url" content="https://guilhermegarcia-pascoa.github.io/quietmarginstudio/privacidade.html">
+<meta property="og:image" content="https://guilhermegarcia-pascoa.github.io/quietmarginstudio/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#4f46e5">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/config.js" defer></script>
+<script src="assets/common.js" defer></script>
+</head>
+<body class="">
+<header class="site"><div class="wrap">
+<a class="logo" href="index.html"><img src="assets/favicon.svg" alt="" width="26" height="26" style="vertical-align:-7px;border-radius:6px"> <b data-brand>Quiet Margin Studio</b></a>
+<nav class="main" aria-label="Principal"><a href="index.html"><span lang="pt">Início</span><span lang="en">Home</span></a><a href="gerador-cv.html"><span lang="pt">Gerador de CV</span><span lang="en">CV builder</span></a><a href="checklist-candidatura.html"><span lang="pt">Checklist de candidatura</span><span lang="en">Application checklist</span></a><a href="calculadora-orcamento.html"><span lang="pt">Orçamento 50/30/20</span><span lang="en">50/30/20 budget</span></a><a href="index.html#premium"><span lang="pt">Modelos premium</span><span lang="en">Premium templates</span></a></nav>
+<button class="lang-btn" id="langBtn" type="button" aria-label="Mudar idioma / Change language">EN</button>
+</div></header>
+<main><div class="wrap">
+
+<section class="card" style="max-width:760px"><h1><span lang="pt">Privacidade</span><span lang="en">Privacy</span></h1>
+<p><span lang="pt"><b>Não recolhemos dados pessoais.</b> Este site não tem contas, formulários enviados para servidores, cookies de publicidade nem ferramentas de análise ou rastreamento.</span><span lang="en"><b>We do not collect personal data.</b> This site has no accounts, no forms sent to servers, no advertising cookies and no analytics or tracking tools.</span></p>
+<p><span lang="pt">O que escreve no gerador de CV, na checklist e na calculadora é guardado apenas no <i>localStorage</i> do seu navegador, no seu dispositivo, para não perder o trabalho. Pode apagar esses dados a qualquer momento com os botões “Limpar” ou limpando os dados do site no navegador.</span><span lang="en">What you type in the CV builder, checklist and calculator is stored only in your browser's <i>localStorage</i>, on your device, so you don't lose your work. You can delete it anytime with the “Clear” buttons or by clearing site data in your browser.</span></p>
+<p><span lang="pt">Os links para a loja levam a plataformas externas (por exemplo Etsy ou Payhip), que têm as suas próprias políticas de privacidade.</span><span lang="en">Shop links go to external platforms (e.g. Etsy or Payhip), which have their own privacy policies.</span></p>
+<p><span lang="pt">As ferramentas são informativas e não constituem aconselhamento financeiro, fiscal ou jurídico.</span><span lang="en">The tools are informational and are not financial, tax or legal advice.</span></p>
+<p class="small muted"><span lang="pt">Última atualização: outubro de 2026.</span><span lang="en">Last updated: October 2026.</span></p>
+<button type="button" class="btn danger sm" id="wipeAll"><span lang="pt">Apagar todos os dados guardados neste site</span><span lang="en">Delete all data saved by this site</span></button>
+</section>
+<script>document.addEventListener("DOMContentLoaded",function(){document.getElementById("wipeAll").addEventListener("click",function(){if(confirm(SITE.t("Apagar todos os dados guardados?","Delete all saved data?"))){try{Object.keys(localStorage).filter(function(k){return k.indexOf("site.")===0}).forEach(function(k){localStorage.removeItem(k)});}catch(e){}alert(SITE.t("Dados apagados.","Data deleted."));}});});</script>
+
+</div></main>
+<footer class="site"><div class="wrap">
+<div>© <span data-year></span> <span data-brand>Quiet Margin Studio</span>. <span lang="pt">Ferramentas gratuitas, sem registo.</span><span lang="en">Free tools, no sign-up.</span></div>
+<div><a href="privacidade.html"><span lang="pt">Privacidade</span><span lang="en">Privacy</span></a> · <span lang="pt">Os seus dados ficam no seu navegador.</span><span lang="en">Your data stays in your browser.</span></div>
+</div></footer>
+</body>
+</html>
