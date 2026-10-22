@@ -4,7 +4,7 @@
    ========================================================= */
 window.SITE_CONFIG = {
   brand: "Quiet Margin Studio",                 // nome da marca (placeholder)
-  siteUrl: "https://guilhermegarcia-pascoa.github.io/quietmarginstudio",   // domínio final (TBD)
+  siteUrl: "https://gacrux-hq.github.io/quietmarginstudio",   // domínio final (TBD)
   shopUrl: "https://payhip.com/QuietMarginStudio",                // loja Etsy/Payhip (TBD)
   contactEmail: "",                 // opcional
   products: [
